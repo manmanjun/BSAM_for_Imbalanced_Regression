@@ -5,7 +5,7 @@
 
 
 ## Usage
-We provide the code fir [AgeDB-DIR](https://github.com/manmanjun/BSAM_for_Imbalanced_Regression/tree/main/agedb) and [IMDB-WIKI-DIR](https://github.com/manmanjun/BSAM_for_Imbalanced_Regression/tree/main/imdb-wiki) dataset. Please go into the subfolders for more information.
+We provide the code for [AgeDB-DIR](https://github.com/manmanjun/BSAM_for_Imbalanced_Regression/tree/main/agedb) and [IMDB-WIKI-DIR](https://github.com/manmanjun/BSAM_for_Imbalanced_Regression/tree/main/imdb-wiki) dataset. Please go into the subfolders for more information.
 
 
 ## Checkpoints

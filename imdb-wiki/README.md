@@ -6,7 +6,7 @@
     python download_imdb_wiki.py
     ```
 
-- We provide the sqr_inv weight as `imdb_sqrt_weight.pt` which is obtained from the code of [imbalanced-regression](https://github.com/YyzHarry/imbalanced-regression/blob/a6fdc45d45c04e6f5c40f43925bc66e580911084/imdb-wiki-dir/datasets.py#L64).
+- We provide the sqrt_inv weight as `imdb_sqrt_weight.pt` which is obtained from the code of [imbalanced-regression](https://github.com/YyzHarry/imbalanced-regression/blob/a6fdc45d45c04e6f5c40f43925bc66e580911084/imdb-wiki-dir/datasets.py#L64).
 
 - To train the model, run 
     ```
