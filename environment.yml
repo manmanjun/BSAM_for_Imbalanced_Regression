@@ -1,4 +1,4 @@
-name: base
+name: bsam
 channels:
   - conda-forge
   - defaults
