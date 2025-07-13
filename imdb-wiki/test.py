@@ -29,7 +29,7 @@ def parse_option():
     parser.add_argument('--trial', type=str, default='0', help='id for recording multiple runs')
 
     parser.add_argument('--data_folder', type=str, default='./data', help='path to custom dataset')
-    parser.add_argument('--dataset', type=str, default='AgeDB', choices=['AgeDB'], help='dataset')
+    parser.add_argument('--dataset', type=str, default='imdb', choices=['imdb'], help='dataset')
     parser.add_argument('--model', type=str, default='resnet18', choices=['resnet18', 'resnet50'])
     parser.add_argument('--resume', type=str, default='', help='resume ckpt path')
     parser.add_argument('--aug', type=str, default='crop,flip,color,grayscale', help='augmentations')
@@ -127,7 +127,7 @@ def validate(val_loader, model, opt):
             losses_mse.update(loss_mse.item(), bsz)
             losses_l1.update(loss_l1.item(), bsz)
         print(losses_l1.avg)
-        df = pd.read_csv("./data/agedb.csv")
+        df = pd.read_csv("./data/imdb_wiki.csv")
         df_train, df_val, df_test = df[df['split'] == 'train'], df[df['split'] == 'val'], df[df['split'] == 'test']
         train_labels = df_train['age']
         shot_dict = shot_metrics(np.hstack(preds_l), np.hstack(labels_l), train_labels)
